@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Main Page
+        </title>
+        <style type="text/css">
+            body{
+                background: repeating-linear-gradient(150deg,black,grey,lightgreen)
+            }
+            .login{
+                width: 50%;
+                margin:auto;
+                background: lightgreen;
+                padding: 20px;
+                text-align: center;
+                font-size: 16px;
+                box-shadow: 2px 1px 30px black;
+                margin-top: 10%;
+            }
+            input{
+                border-radius: 10px;
+                border: aqua;
+                padding: 4px;
+            }
+            p{
+                margin-left: -25%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <form action="/login" method="POST">
+            <h1>Login</h1>
+            <p>{{msg}}</p>
+            <p>UserName:</p>
+            <input type="text" name="username">
+            <p>Password:</p>
+            <input type="password" name="password" ><br><br>
+            <input type="submit" style="padding: 8px;">
+        </form> 
+        <a href="registration_page">Don't have account? Create an account</a>
+        </div>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
