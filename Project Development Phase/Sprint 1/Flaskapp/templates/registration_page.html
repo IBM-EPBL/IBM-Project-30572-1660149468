@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>account_creation</title>
+        <style>
+            .details{
+                margin: auto;
+                width: 50%;
+                text-align: center;
+                background: rgb(141, 172, 223);
+                padding: 20px;
+                margin-top: 10%;
+                box-shadow: 2px 2px 20px rgb(116, 115, 115);
+                border-radius: 5px ;
+            }
+            body{
+                background:repeating-linear-gradient(154deg,rgb(170, 166, 166),skyblue,silver)
+            }
+            input{
+                border:none;
+                border-radius: 5px;
+                width: 30%;
+                outline: none;
+            }
+            input:focus{
+                border:none;
+                background-color: rgb(224, 232, 232);
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="details">
+            <form action="/register" method="POST">
+                <h1>Create Account</h1>
+                <p>{{msg}}</p>
+                <p>UserName:</p>
+                <input type="text" name="username">
+                <p>Email Id:</p>
+                <input type="text" name="email">
+                <p>Roll Number:</p>
+                <input type="text" name="rollno">
+                <p>Password:</p>
+                <input type="text" name="password">
+                <br><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>

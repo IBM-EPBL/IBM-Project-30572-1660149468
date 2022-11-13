@@ -1,0 +1,41 @@
+*{
+    border: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Tittle{
+    font-size: 40px;
+    padding: 10px;
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    color: azure;
+    text-shadow: 2px 2px 5px gray;
+}
+.heading{
+    background: black;
+    box-shadow: 0px 15px 10px -15px rgb(249, 246, 246);;
+}
+body{
+    background: repeating-linear-gradient(566deg,silver,grey,silver);
+}
+.login{
+    width: 60%;
+    margin:auto;
+    background: silver;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 1px 30px black;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+.link{
+    text-decoration: none;
+}
+input{
+    border-radius: 5px;
+}
+#submit{
+    background: grey;
+    box-shadow: 2px 2px 3px black;
+}
