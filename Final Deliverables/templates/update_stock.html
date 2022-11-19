@@ -1,0 +1,135 @@
+<! Doctype html>  
+    <html lang="en">  
+    <head>  
+    <title>Update stock</title>
+    <link rel="stylesheet" href="../static/index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      <meta charset="utf-8">  
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+      <style>  
+	label{
+	display: inline-block;
+        width: 150px;
+        text-align: right;
+  } 
+
+h1{
+  margin-top: 5%;
+}
+/* Add padding to containers */
+#form1 {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=number] input[type=float]  input[type=date]  {
+
+    height: 30px;
+    width: 735px;
+    text-align: center;
+    clear: both;
+    margin-bottom:0px;
+    padding-top:5px;
+}
+
+
+input[type=text]:focus, input[type=number]:focus input[type=float]:focus  input[type=date]:focus  {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+#form1 {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+div {
+        margin-bottom: 10px;
+      }
+
+    </style>
+    <script language=javascript>
+      function submitPostLink()
+      {
+      document.postlink.submit();
+      }
+      </script> 
+    
+    </head>  
+    <body style="background-color:white;">  
+      <header>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+          <a href="{{url_for('dashboard') }}"><strong> Dashboard<strong></a>
+          <a href="{{url_for('add_stock') }}"><strong>Add stock<strong></a>
+          <a href="{{url_for('update_stock') }}"><strong>Update stock <strong></a>
+          <a href="{{url_for('view_stock') }}"><strong>View stock<strong></a>
+          <a href="{{url_for('delete_stock')}}"><strong>Delete stock<strong></a>
+          <a href="{{url_for('logout') }}"><strong>Log out<strong></a>  
+        </div>
+        <div class="profile">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-list"></i> Menu</span>
+        </header>
+        <center>
+    <h1 style="
+    text-align: center;
+    color: #fff;
+    font-size: 1.6em;
+    background: #616161;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    width: 700px;
+    padding: 30px 0px 30px 0px;
+    line-height: 0px !important;">  <br />UPDATE STOCK</h1>  
+    <form method="post" action="{{url_for('update_stock') }}" style="
+	background:#f7f7f7;
+	width: 700px;
+	border:1px solid #ccc;
+	padding:30px 0px 30px 0px;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+	margin-top:10px;">    
+      <pre>{{msg}}</pre>
+      <label> Product name: &nbsp;&nbsp;</label> <input type="string" name="prodname" style="width: 150px" autocomplete="off" >  
+     
+      <br> <br>  
+      <label> Item quantity: &nbsp;&nbsp;</label> <input type="number" name="quantity" style="width: 150px" autocomplete="off" >  
+     
+      <br> <br>  
+
+      <label style="width:250px;margin-left:-175px;"> Warehouse location: &nbsp;&nbsp;</label> 
+      <select name="warehouse_location">
+        <option value="Chennai">Chennai</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Tirunelveli">Tirunelveli</option>
+        <option value="coimbatore">Coimbatore</option>
+      
+      </select>
+      <br> <br> 
+      <input class="registerbtn" type="submit" name="submit" value="Update">    
+    </form>  
+    </center>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    </body>
+    </html>
