@@ -1,0 +1,45 @@
+*{
+    border: 0px;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+.Tittle{
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    margin: auto;
+    color: azure;
+    text-shadow: 2px 2px 5px gray;
+}
+.heading{
+    background: rgb(138, 137, 137);
+    box-shadow: 0px 15px 10px -15px rgb(20, 20, 20);
+}
+body{
+    background-image: url("pic1.jpg");
+    background-size: cover;
+}
+input{
+    border: 0;
+    border-bottom:1px solid black;
+    outline: none;
+    background: transparent;
+}
+.login{
+    color: rgb(5, 5, 5);
+    width: 60%;
+    margin:auto;
+    background:  rgba(206, 204, 204, 0.4 );
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 1px 10px rgb(82, 78, 78,);
+    margin-top: 5%;
+    border-radius: 8px;
+}
+.link{
+    text-decoration: none;
+}
+#submit{
+    background: grey;
+    box-shadow: 2px 2px 3px rgb(114, 113, 113);
+}
